@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href ="./assets/style.css">
+    <title>Boots</title>
+</head>
+<body>
+    <header> <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#h1">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#h2">IV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#h4">Natures</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#h5">Objets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#h6">Ev</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#h7">Exemple</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Mise en place d'un header avec un menu adapté -->  </header>
+    <h1 id = "h1"> Pokémon : Élevage stratégique</h1>
+
+      <h2> Introduction </h2>
+
+      <p>Cela fait de nombreuses années maintenant que l'on entend parler "d'élevage stratégique" dans pokémon. Mais qu'est-ce que c'est au juste ? L'élevage stratégique peut sembler complexe et plutôt rebutant au premier regard. Pourtant, avec un peu de pratiques et de bonnes informations, cela peu rapidement devenir simple d'obtenir le pokémon souhaiter.
+
+
+     <br> <br>   Si l'on veut jouer plus sérieusement à pokémon et commencer à participer à des compétions, il est obligatoires d'avoir une équipe stratégique, sans quoi, l'on ira pas bien loin dans un tournoi. Nous allons voir ici comment avoir un pokémon stratégique en passant par toutes les étapes de sa création. Mon choix va se porter vers Métaloss, car il fait partie du tier over used en stratégie (l'un des tier le plus utilisé) et, car il est disponible sur les deux dernières versions de pokémon sorties à l'heure où j'écris cet article.</p>
+
+        <img class ="img2" src="./assets/img/metalosse.png">
+
+    <h2 id= "h2">Les iv</h2>
+
+    <p>Afin de bien commencer, il est important de connaître les IV de ses pokémons. Il faut donc obtenir la fonction "juge" dans le jeu. Cette fonction s'obtient après la ligue. Les IV sont des statistiques cachées comprises entre 0 et 31. Ces valeurs sont attribuées à chaque statistique du pokémon (pv, attaque, deffense, ect.). Plus la valeur est élevé, plus cela améliorera la statistique.</p>
+   
+        <p>Pour transmettre les IV, il sera très utile d'utiliser l'objet "noeud destin". Cet objet permet en effet transmettre 5 iv des parents au lieu de 3 en temps normal. Cela nous permettra de transmettre plus rapidement les IV. Cet objet s'obtient assez facilement dans les jeux.</p>
+
+<h3>Tableau des valeurs en IV</h3> <!-- création d'un tableau -->
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"> <strong>statistique</strong></th>
+            <th scope="col">Valeur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Pas top</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">Passable</th>
+            <td>1 à 15</td>
+          </tr>
+          <tr>
+            <th scope="row">Bon</th>
+            <td colspan="2">16 à 25</td>
+          </tr>
+          <tr>
+            <th scope="row">Très bon</th>
+            <td colspan="2">26 à 29</td>
+          </tr>
+          <tr>
+            <th scope="row">Fantastique</th>
+            <td colspan="2">30</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Exceptionnel</th>
+            <td colspan="2">31</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+
+    <h2 id="h3" >Où trouver des Pokémon avec de bons IV ?</h2>
+
+    <p>C'est variable d'une version à l'autre. Généralement, le jeu nous offre au moins une possibilité de trouver des pokémon avec des IV meilleur. Nous pouvons par exemple citer les antres dynamax dans épée et bouclier ou le pokéradar dans diamant étincelant et perle scintillante.</p>
+
+      <img class ="img1" src = "assets/img/img1.jpeg" >
+
+
+    <h2 id="h4">Les natures</h2>
+
+    <p>Chaque Pokémon, possède une nature. La nature est trouvable dans le résumé du Pokémon et influence les statistiques du pokémon. Il en existe en tout 25. Sur ces 25 nature, 20 augmente une statistique de 10% et en diminue une autre de 10%. Les 5 autres natures sont neutres et ne vont pas nous intéressant en stratégie, car elles n'apportent donc aucun bonus.
+
+
+        Comme vous pouvez le constater, avec le bonus vient un malus. Nous allons faire en sorte que celui-ci ne nous handicape pas. Il n'est en effet pas nécessaire qu'un pokémon ait TOUTES ses statistiques au maximum, cela nous permet donc d'en sacrifier une pour le malus. </p>
+        
+        
+        <p>Certaines natures sont plus utilisées que d'autres. Par exemple vous verrez passez beaucoup de pokémon de nature Rigide. Pourquoi ? Car dans ce cas, on privilégie l'attaque à l'attaque spéciale.
+
+            <br>
+            <br>
+
+            Petit exemple d'un Métalosse à la nature rigide :
+            
+            <br>
+            <br>
+
+            On va essayer de maximiser la statistique d'attaque du pokémon en ayant une IV à 31 en attaque, une nature rigide. Nous apprendrons donc à ce pokémon exclusivement des attaques physiques et aucune attaque spéciale.</p>
+        
+
+            
+            <br>
+
+            <img class ="img3" src="./assets/img/met.png" height="150px" width="200px">
+
+      <p class ="center">    Voici ci-dessous un résumé de toutes les natures :</p>
+
+       
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"> <strong>Nature</strong></th>
+                <th scope="col">Stat augmentée</th>
+                <th scope="col">Stat diminuée</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Solo</th>
+                <td class="table-success">Attaque</td>
+                <td class="table-danger">Défense</td>
+              </tr>
+              <tr>
+                <th scope="row">Rigide</th>
+                <td class="table-success">Attaque</td>
+                <td class="table-danger">Att spé</td>
+              </tr>
+              <tr>
+                <th scope="row">Mauvais</th>
+                <td class="table-success">Attaque</td>
+                <td class="table-danger">Def spé</td>
+              </tr>
+              <tr>
+                <th scope="row">Brave</th>
+                <td class="table-success">Attaque</td>
+                <td class="table-danger">Vitesse</td>
+              </tr>
+              <tr>
+                <th scope="row">Modeste</th>
+                <td class="table-success">Att spé</td>
+                <td class="table-danger">Attaque</td>
+              </tr>
+              <tr>
+                <th scope="row">Doux</th>
+                <td class="table-success">Att spé</td>
+                <td class="table-danger">Défense</td>
+              </tr>
+              <tr>
+                <th scope="row">Foufou</th>
+                <td class="table-success">Att spé</td>
+                <td class="table-danger">Def spé</td>
+              </tr>
+              <tr>
+                <th scope="row">Discret</th>
+                <td class="table-success">Att spé</td>
+                <td class="table-danger">Vitesse</td>
+              </tr>
+              <tr>
+                <th scope="row">Assuré</th>
+                <td class="table-success">Défense</td>
+                <td class="table-danger">Attaque</td>
+              </tr>
+              <tr>
+                <th scope="row">Malin</th>
+                <td class="table-success">Défense</td>
+                <td class="table-danger">Att spé</td>
+              </tr>
+              <tr>
+                <th scope="row">Lâche</th>
+                <td class="table-success">Défense</td>
+                <td class="table-danger">Def spé</td>
+              </tr>
+              <tr>
+                <th scope="row">Relax</th>
+                <td class="table-success">Défense</td>
+                <td class="table-danger">Vitesse</td>
+              </tr>
+              <tr>
+                <th scope="row">Calme</th>
+                <td class="table-success">Def spé</td>
+                <td class="table-danger">Attaque</td>
+              </tr>
+              <tr>
+                <th scope="row">Gentil</th>
+                <td class="table-success">Def spé</td>
+                <td class="table-danger">Défense</td>
+              </tr>
+              <tr>
+                <th scope="row">Prudent</th>
+                <td class="table-success">Def spé</td>
+                <td class="table-danger">Att spé</td>
+              </tr>
+              <tr>
+                <th scope="row">Malpoli</th>
+                <td class="table-success">Def spé</td>
+                <td class="table-danger">Vitesse</td>
+              </tr>
+              <tr>
+                <th scope="row">Timide</th>
+                <td class="table-success">Vitesse</td>
+                <td class="table-danger">Attaque</td>
+              </tr>
+              <tr>
+                <th scope="row">Pressé</th>
+                <td class="table-success">Vitesse</td>
+                <td class="table-danger">Défense</td>
+              </tr>
+              <tr>
+                <th scope="row">Jovial</th>
+                <td class="table-success">Vitesse</td>
+                <td class="table-danger">Att spé</td>
+              </tr>
+              <tr>
+                <th scope="row">Naïf</th>
+                <td class="table-success">Vitesse</td>
+                <td class="table-danger">Def spé</td>
+              </tr>
+            </tbody>
+          </table>
+      
+      
+<p>Toujours au sujet des natures, si l'on veut que notre pokémon ait une nature précise, c'est possible. Pour cela il faudra que l'un des "parent" en l'occurrence un métalosse ou un métamorphe ait la nature demandée. Si l'un des parents, le métalosse admettons, a une nature rigide, c'est parfait. Il lui suffira de lui faire tenir l'objet "pierre stase" avant de le mettre à la pension avec le métamorhphe. Eh oui, l'objet pierre stase ne sert pas qu'à éviter qu'un pokémon évolue, il sert également à transmettre les natures à des pokémons.</p>
+
+
+
+<br>
+<br>
+
+    <h2 id="h5">Les objets, résumé</h2>
+
+    <br>
+    <br>
+
+    <h3>Le noeud destin, pour les IV</h3>
+    <p>Pour transmettre les IV, il sera très utile d'utiliser l'objet "noeud destin". Cet objet permet en effet transmettre 5 iv des parents au lieu de 3 en temps normal. Cela nous permettra de transmettre plus rapidement les IV. Cet objet s'obtient assez facilement dans les jeux.</p>
+    
+    <img class ="img3 " src="./assets/img/noeud.jpeg" height="100px" width="200px">
+
+    <br>
+    <br>
+    <h3>Les objets pouvoirs, pour les IV</h3>
+
+    <p>D'autres objets sont utiles. Ce sont les objets pouvoirs. Ils permettent de donner une IV spécifique s'ils sont tenus. Par exemple, dans notre cas, si le Métaloss à une IV d'attaque à 31 et qu'il tient un poignet pouvoir, son bébé aura forcément une IV d'attaque à 31.</p>
+
+    <img class ="img3 " src="./assets/img/pow.png" height="120px" width="180px">
+
+    <h3>La pierre stase, pour la nature</h3>
+    <p>Toujours au sujet des natures, si l'on veut que notre pokémon ait une nature précise, c'est possible. Pour cela il faudra que l'un des "parent" en l'occurrence un métalosse ou un métamorphe ait la nature demandée. Si l'un des parents, le métalosse admettons, a une nature rigide, c'est parfait. Il lui suffira de lui faire tenir l'objet "pierre stase" avant de le mettre à la pension avec le métamorhphe. Eh oui, l'objet pierre stase ne sert pas qu'à éviter qu'un pokémon évolue, il sert également à transmettre les natures à des pokémons.</p>
+    <img class ="img3 " src="./assets/img/pierre.png" height="100px" width="200px">
+    <br>
+    <br>
+
+    <h2 id="h6">Les ev</h2>
+
+    <br>
+    <br>
+
+    <p>Les ev ou effort value sont d'autres statistiques cachée (eh oui, encore me direz-vous). Elles ne sont pourtant pas à négliger. Un pokémon peut avoir 510 ev repartirent entre ses différentes stats. En gros, ces points amélioreront ses statistiques. Par exemple, pour notre Métaloss, on va d'office mettre la moitié de ces ev en attaque vu que c'est la statistique que nous voullons privillégier. Comme vous le voyez, il y a un certain nombre de choses qui peuvent augmenter ou baisser vos statistiques. En ce qui concerne les ev nous en parlerons plus en détails lorsque nous aborderons l'entrainement de notre pokémon stratégique.</p>
+    
+          <br>
+          <br>
+
+    <h2 id="h7">Un exemple pratique : du bébé Terhal au Métaloss stratégique</h2>
+
+    <br>
+    <br>
+   
+    <img class ="img3 " src="./assets/img/ter.png" height="200px" width="200px">
+
+    <p>Depuis tout à l'heure j'illustre avec un exemple concret. Nous allons donc continuer ici avec le même exemple. Nous visons un Métaloss stratégique, il serait de nature rigide avec 5IV à 31 en tout sauf attaque spéciale et une répartition d'ev a 252 en att, 180 spe et 76 en en pv. On va donc voir comment arriver à ce résultat.</p>
+
+
+    <h3> Le talent </h3>
+
+    <p>Pour commencer, on va choisir le talent. Heureusement, ont vise ici le talent "corps sain" qui est le talent classique de Métaloss. Il existe en effet des talents trouvables facilement et des talents dit "caché". Dans ce cas de figure il faut souvent aller chercher le pokémon dans un autre endroit (comme, encore une fois, les antres dynamax en ce qui concerne pokémon épée et bouclier). Mais dans ce cas, nous prenons donc le talent "corps sain". Ici comme dans la nature "corps sains" est le seul talent de Terhal/Metang/Metaloss (notre pokémon et sa famille d'évolution) cela sera facile, notre bébé pokémon aura forcément ce talent.</p>
+ 
+    <h3>Les eggs move</h3>
+
+    <p>Petite parenthèse sur les egg move. Les pokémons font tous partis d'un ou plusieurs groupe(s) d'oeuf. On peut donc faire se reproduire deux pokémons du même groupe d'oeuf (un baudrive et un fantominus entre eux par exemple). Cette technique peut permettre d'aller chercher des IV que notre pokémon de base n'aurait pas, mais cela peut aussi permettre d'apprendre des capacités à notre bébé pokémon qu'il n'aurait normalement pas pu apprendre. Dans notre cas, Métaloss n'a aucune capacité de ce genre et a de toute façon bien assez de capacité puissante. Nous ne devrons donc pas avoir recour à cette technique mais n'hésitez pas à vous renseigner sur le sujet si les egg move vous intéressent.</p>
+
+    <h3> La nature </h3>
+
+    <p>Nous avons déjà parlé de la nature. Vous savez donc qu'il faut que l'un des parents ait la nature souhaiter afin qu'il la transmette à notre bébé Terhal. Mettons donc que nous ayons un Métaloss rigide, nous allons lui faire tenir la pierre stase et nous allons le poser avec métamorphe dont nous allons voir les caractéristiques ci-dessous.</p>
+
+    <h3>Les iv </h3>
+    
+    <p>Nous souhaitons avoir un pokémon qui aura au totale 5IV à 31 et autant vous dire que vous n'en trouverez malheureusement pas dans la nature. Le but ici de trouver un métamorphe avec le plus d'IV possible (par le biais des antres dans pokémon Epée-Bouclier et par le pokéradar dans les remake de Diamant et Perle.) Nous allons partir du fait que vous êtes chanceux, vous avez réussi à trouver un métamorphe avec 4 IV ! Voici le profil de votre métamorphe :</p>
+    <img class ="img3 " src="./assets/img/morphy.png" height="140px" width="200px">
+    <p class="text"> PV 31/ATT X/ ATT spe X/ Deff 31/ Deff spé 31/ Vitesse 31 </p>
+
+    <p> Comme vous pouvez le voir, c'est déjà très bien, mais il manque une IV essentielle : celle de l'attaque. Nous nous pencherons dessus juste après. À partir de ce moment, votre but sera de faire que votre bébé Terhal arrive exactement à ces statistiques en IV : </p>
+    <img class ="img3 " src="./assets/img/ter.png" height="140px" width="200px">
+    <p class="text">Rigide PV 31/ATT X/ ATT spe X/ Deff 31/ Deff spé 31/ Vitesse 31 </p>
+
+    <p>Pour cela vous allez poser votre métamorphe avec l'objet "noeud destin" pour qu'il essaie de donner ces quatre IV à 31 à votre Terhal et vous allez donner l'objet pierre stase à votre Tehral pour qu'il donne sa nature à chaque fois. Ce processus est assez long et laborieux, il nécessite un grand nombre d'oeufs. À un moment, vous vous retrouverez peut-être avec un Terhal ayant déjà deux IV à 31. Parfait ! Changer votre premier Terhal à la pension contre le second et n'oubliez pas de toujours lui faire tenir la pierre stase ! Vous vous retrouverez donc avec à la pension ces pokémon :</p>
+    
+    <img class ="img3 " src="./assets/img/morphy.png" height="140px" width="200px">
+    <p class="text"> PV 31/ATT X/ ATT spe X/ Deff 31/ Deff spé 31/ Vitesse 31 </p>
+    <p>Et</p>
+    <img class ="img3 " src="./assets/img/ter.png" height="140px" width="200px">
+    <p class="text"> PV X/ATT X/ ATT spe X/ Deff X/ Deff spé 31/ Vitesse 31 </p>
+
+    <p>Continuer à faire des oeufs et à changer les Terhal jusqu'à ce que vous ayez le résultat voulu. Lorsque vous y parvenez, il va maintenant falloir trouver un pokémon ayant la fameuse IV en attaque qui vous manque. Cela peut être un Métamorphe, un pokémon de la famille d'évolution de Métaloss ou un pokémon de la famille d'oeuf du Métaloss, mais dans ce cas vous devez avoir un Terhal femelle et un autre pokémon mâle sinon c'est un oeuf de l'autre pokémon que vous aurez. Afin d'illustrer ceci et de vous apprendre à utiliser les familles d'oeufs avec sagesse, prenons donc le dernier cas.
+
+
+        Métaloss fait partie de la famille d'oeuf dite "minérale". Nous allons donc voir dans nos boîtes si nous n'avons pas un pokémon de cette famille ayant une belle IV en attaque ou alors nous irons en capturer un. Prenons un autre pokémon disponible dans beaucoup de jeu : Onix. Nous avons donc réussi à mettre la main sur cet Onix mâle :</p>
+
+        <img class ="img3 " src="./assets/img/onix.png" height="140px" width="200px">
+        <p class="text"> PV 31/ATT 31/ ATT spe X/ Deff X/ Deff spé X/ Vitesse X </p>
+
+    <p>Comme vous pouvez le voir, il n'a pas beaucoup d'IV, mais au moins il a celle que l'ont recherche. On va donc mettre cet Onix avec notre précédent Terhal. Onix aura comme objet noeud destin et Terhal aura la pierre stase, car ont cherche encore et toujours la nature rigide. Voici donc ce que nous aurons à la pension :</p>
+
+    <img class ="img3 " src="./assets/img/ter.png" height="140px" width="200px">
+    <p class="text">Rigide PV 31/ATT X/ ATT spe X/ Deff 31/ Deff spé 31/ Vitesse 31 </p>
+    <img class ="img3 " src="./assets/img/onix.png" height="140px" width="200px">
+    <p class="text"> PV 31/ATT 31/ ATT spe X/ Deff X/ Deff spé X/ Vitesse X </p>
+
+
+
+</body>
+</html>
