@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    color: rgb(4, 77, 61);
+    color: rgb(26, 26, 26);
 }
 
 h2 {
@@ -12,16 +12,14 @@ h3 {
     color: rgb(49, 49, 49);
     
 }
-
+/*
 .img1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 30rem;
-    padding-bottom: 3rem;
-    padding-top: 2rem ;
+  
 }
-
+*/
 body {
     background-color: lightgray;
 }
@@ -30,15 +28,54 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 30rem;
+
  
 }
 
 .img3 {
-    margin-left: 33rem;
+    
     justify-content: center;
 }
 
 .text {
     text-align: center;
 }
+
+.align {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+*{
+
+    margin:0;
+    
+    padding:0;
+    
+    }
+
+footer {
+    
+
+bottom:-1;
+    color: black;
+}
+
+
+
+img:hover {
+    filter: brightness(110%);
+}
+
